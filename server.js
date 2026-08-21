@@ -13,7 +13,7 @@ if (!process.env.GEMINI_API_KEY) {
 
 const app = express();
 const port = Number(process.env.PORT || 3000);
-const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash-lite';
+const model = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
 const allowedOrigins = String(process.env.ALLOWED_ORIGINS || '')
   .split(',')
   .map(v => v.trim())
